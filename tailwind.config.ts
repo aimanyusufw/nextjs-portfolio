@@ -7,10 +7,21 @@ export default {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    container: {
+      center: true,
+      padding: "16px",
+    },
     extend: {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+      },
+      fontFamily: {
+        popins: ["Poppins", "serif"],
+        firaCode: ["Fira Code", "serif"],
+      },
+      screens: {
+        "2xl": "1280px",
       },
     },
   },
