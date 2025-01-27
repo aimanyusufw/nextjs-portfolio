@@ -3,5 +3,9 @@
 @tailwind utilities;
 
 body {
-  @apply bg-neutral-900 text-white;
+  @apply bg-[#0c0c0c] text-white;
+}
+
+h1 {
+  @apply selection:bg-white selection:text-black;
 }

@@ -17,9 +17,31 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
+  icons: {
+    apple: [
+      {
+        rel: "apple-touch-icon",
+        sizes: "180x180",
+        url: "/favicon/apple-touch-icon.png",
+      },
+    ],
+    icon: [
+      {
+        rel: "image/png",
+        sizes: "32x32",
+        url: "favicon/favicon-32x32.png",
+      },
+      {
+        rel: "image/png",
+        sizes: "16x16",
+        url: "favicon/favicon-16x16.png",
+      },
+    ],
+  },
   title: "Home - Aiman Yusuf Wicaksono",
   description:
     "Hello, My name is Aiman Yusuf and i'am a software engineer from Indonesia",
+  manifest: "/favicon/site.webmanifest",
 };
 
 export default function RootLayout({
