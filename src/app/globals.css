@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  @apply bg-[#0c0c0c] text-white;
+  @apply bg-background text-text dark:text-dark-text dark:bg-dark-background;
 }
 
 h1 {
