@@ -2,6 +2,7 @@
 
 import { Skeleton } from "@/components/ui/Skeleton";
 import Image from "next/image";
+import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { FaFacebook, FaInstagram, FaTiktok, FaXTwitter } from "react-icons/fa6";
 
@@ -19,15 +20,30 @@ const Home = () => {
     <>
       <section>
         <div className="container py-80 flex justify-center items-center h-full">
-          <div className="md:px-4 space-y-5 relative">
-            <h4 className="font-medium text-3xl text-center">Hello 👋</h4>
+          <div className="md:px-4 space-y-8 relative">
+            <div className="flex justify-center items-center gap-4">
+              <div className="rounded-full w-12 h-12">
+                {isLoading ? (
+                  <Skeleton className="w-12 h-12 rounded-full" />
+                ) : (
+                  <Image
+                    src="/profile.svg"
+                    alt="Aiman Yusuf Wicaksono"
+                    width={70}
+                    height={70}
+                    className="w-full h-full"
+                  />
+                )}
+              </div>
+              <h4 className="font-medium text-3xl text-center">Hello 👋</h4>
+            </div>
             <h1 className="font-semibold text-6xl max-w-4xl text-center leading-relaxed">
               My Name Is{" "}
               <span
                 id="trigger"
-                className="text-red-500 cursor-pointer group relative underline"
+                className="text-red-500 cursor-pointer group relative"
               >
-                ${"{name}"}
+                [name]
                 <div
                   id="tag"
                   className="absolute transition-all duration-300 opacity-0 text-base w-[600px] group-hover:opacity-100 flex flex-col items-center font-firaCode top-20 left-1/2 transform -translate-x-1/2"
@@ -46,18 +62,17 @@ const Home = () => {
               </span>{" "}
               and I&apos;m A Software Engineer;
             </h1>
-            <div className="rounded-full mx-auto w-16 h-16">
-              {isLoading ? (
-                <Skeleton className="w-16 h-16 rounded-full" />
-              ) : (
-                <Image
-                  src="/profile.svg"
-                  alt="Aiman Yusuf Wicaksono"
-                  width={70}
-                  height={70}
-                  className="w-full h-full"
-                />
-              )}
+            <p className="text-text text-sm mx-auto max-w-lg text-center leading-relaxed">
+              Hello, my name is Aiman, and I'm a Software Engineer from
+              Indonesia. I enjoy exploring new experiences in my life.
+            </p>
+            <div className="flex justify-center">
+              <Link
+                className="px-6 py-4 bg-neutral-800 rounded-xl text-sm font-medium"
+                href={"#"}
+              >
+                Discover My Portfolio
+              </Link>
             </div>
           </div>
         </div>
