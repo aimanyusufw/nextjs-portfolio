@@ -1,6 +1,6 @@
 Hello my friends, This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app) for my portfolio.
 
-## Previw Website
+## Preview Website
 
 <p align="center">
   <a href="http://nestjs.com/" target="blank"><img src="https://aimanyusuf.me/img/web-preview.png" alt="Web Preview" /></a>
