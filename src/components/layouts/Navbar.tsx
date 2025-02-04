@@ -7,11 +7,9 @@ const Navbar = () => {
       <div className="container">
         <div className="flex md:px-4 justify-between">
           <Link href={"/"}>
-            <h1 className="font-popins font-bold text-2xl text-text dark:text-dark-text">
-              AYW.
-            </h1>
+            <h1 className="font-popins font-bold text-2xl text-text">AYW.</h1>
           </Link>
-          <div className="flex gap-4 text-sm font-medium text-text dark:text-dark-text">
+          <div className="flex gap-4 text-sm font-medium text-text">
             <Link className="hover:opacity-70 transition-all" href="#">
               Projects
             </Link>

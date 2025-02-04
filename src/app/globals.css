@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  @apply bg-background text-text dark:text-dark-text dark:bg-dark-background;
+  @apply bg-background text-text;
 }
 
 h1 {
