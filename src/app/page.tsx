@@ -63,7 +63,7 @@ const Home = () => {
               and I&apos;m A Software Engineer;
             </h1>
             <p className="text-text text-sm mx-auto max-w-lg text-center leading-relaxed">
-              Hello, my name is Aiman, and I'm a Software Engineer from
+              Hello, my name is Aiman, and I&lsquo;m a Software Engineer from
               Indonesia. I enjoy exploring new experiences in my life.
             </p>
             <div className="flex justify-center">
