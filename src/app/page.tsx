@@ -97,8 +97,8 @@ const Home = () => {
                 Hello, I&apos;m Aiman Yusuf Wicaksono!
               </h1>
               <p className="text-xs md:text-sm leading-relaxed text-neutral-300 max-w-sm">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry&lsquo;s
+                Hello, my name is Aiman, and I&lsquo;m a Software Engineer from
+                Indonesia. I enjoy exploring new experiences in my life.
               </p>
               <h3 className="font-medium font-firaCode">Connect With Me ⮧</h3>
               <div className="flex gap-4">
