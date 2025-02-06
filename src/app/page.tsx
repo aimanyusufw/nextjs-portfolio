@@ -68,7 +68,7 @@ const Home = () => {
             </p>
             <div className="flex justify-center">
               <Link
-                className="px-6 py-4 bg-neutral-800 rounded-xl text-sm font-medium"
+                className="px-4 py-3 bg-neutral-800 rounded-xl text-sm font-medium"
                 href={"#"}
               >
                 Discover My Portfolio
