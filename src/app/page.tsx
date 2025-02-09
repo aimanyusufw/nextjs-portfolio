@@ -120,6 +120,79 @@ const Home = () => {
           </div>
         </div>
       </section>
+      <div className="py-12">
+        <div className="container">
+          <div className="md:px-4 mb-8">
+            <h1 className="text-xl">Career & Education</h1>
+          </div>
+          <div className="md:px-4 space-y-8">
+            <div className="flex items-center gap-4">
+              <div className="flex justify-center items-center p-2 rounded-full bg-white w-16 h-16">
+                <Image
+                  src={"Logo_Universitas_Terbuka.svg.png"}
+                  width={70}
+                  height={70}
+                  alt="SMK Negeri 4 Kendal Logo"
+                />
+              </div>
+              <div className="">
+                <h1 className="text-lg">Terbuka University</h1>
+                <span className="text-sm text-opacity-60">
+                  Student, Jun 2024 - Present
+                </span>
+              </div>
+            </div>
+            <div className="flex items-center gap-4">
+              <div className="flex justify-center items-center p-2 rounded-full bg-white w-16 h-16">
+                <Image
+                  src={"/bullion.png"}
+                  width={70}
+                  height={70}
+                  alt="SMK Negeri 4 Kendal Logo"
+                />
+              </div>
+              <div className="">
+                <h1 className="text-lg">Bullion Ecosystem International </h1>
+                <span className="text-sm text-opacity-60">
+                  Server Monitoring Staff, April 2024 - Present
+                </span>
+              </div>
+            </div>
+            <div className="flex items-center gap-4">
+              <div className="flex justify-center items-center p-2 rounded-full bg-white w-16 h-16">
+                <Image
+                  src={"/bullion.png"}
+                  width={70}
+                  height={70}
+                  alt="SMK Negeri 4 Kendal Logo"
+                />
+              </div>
+              <div className="">
+                <h1 className="text-lg">Bullion Ecosystem International </h1>
+                <span className="text-sm text-opacity-60">
+                  internship, October 2023 - Maret 2024
+                </span>
+              </div>
+            </div>
+            <div className="flex items-center gap-4">
+              <div className="flex justify-center items-center p-2 rounded-full bg-white w-16 h-16">
+                <Image
+                  src={"/logo-smk-4.png"}
+                  width={70}
+                  height={70}
+                  alt="SMK Negeri 4 Kendal Logo"
+                />
+              </div>
+              <div className="">
+                <h1 className="text-lg">Senior High School 4 Kendal </h1>
+                <span className="text-sm text-opacity-60">
+                  Student, July 2021 - Jun 2024
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </>
   );
 };
