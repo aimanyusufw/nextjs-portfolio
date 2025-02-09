@@ -1,11 +1,10 @@
 "use client";
 
 import { Skeleton } from "@/components/ui/Skeleton";
-import { careerEducation } from "@/data/home";
+import { careerEducation, socialMedia } from "@/data/home";
 import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
-import { FaFacebook, FaInstagram, FaTiktok, FaXTwitter } from "react-icons/fa6";
 
 const Home = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -103,10 +102,11 @@ const Home = () => {
               </p>
               <h3 className="font-medium font-firaCode">Connect With Me ⮧</h3>
               <div className="flex gap-4">
-                <FaTiktok className="w-5 h-5" />
-                <FaInstagram className="w-5 h-5" />
-                <FaFacebook className="w-5 h-5" />
-                <FaXTwitter className="w-5 h-5" />
+                {socialMedia.map((data) => (
+                  <Link href={data.url} key={data.name} target="_blank">
+                    <data.icon size={22} />
+                  </Link>
+                ))}
               </div>
             </div>
             <div className="w-full md:w-1/2">

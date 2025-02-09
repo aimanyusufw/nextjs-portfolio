@@ -1,3 +1,12 @@
+import { IconType } from "react-icons";
+import {
+  FaFacebook,
+  FaInstagram,
+  FaTiktok,
+  FaXTwitter,
+  FaLinkedin,
+} from "react-icons/fa6";
+
 export const careerEducation = [
   {
     title: "Terbuka University - Bachelor’s Degree",
@@ -27,4 +36,30 @@ export const careerEducation = [
     from: "July 2021",
     until: "Jun 2024",
   },
+];
+
+interface SocialMedia {
+  name: string;
+  icon: IconType;
+  url: string;
+}
+
+export const socialMedia: SocialMedia[] = [
+  {
+    name: "Instagram",
+    icon: FaInstagram,
+    url: "https://www.instagram.com/aimanyw_/",
+  },
+  { name: "Tik Tok", icon: FaTiktok, url: "https://www.tiktok.com/@aimanyw_" },
+  {
+    name: "Linkedin",
+    icon: FaLinkedin,
+    url: "https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile",
+  },
+  {
+    name: "Facebook",
+    icon: FaFacebook,
+    url: "https://www.facebook.com/profile.php?id=61554416981074",
+  },
+  { name: "X", icon: FaXTwitter, url: "https://x.com/aimanyus_" },
 ];
