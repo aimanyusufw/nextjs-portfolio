@@ -10,6 +10,7 @@ import {
 export const careerEducation = [
   {
     title: "Terbuka University - Bachelor’s Degree",
+    link: "https://ut.ac.id",
     image: "Logo_Universitas_Terbuka.svg.png",
     role: "Information Systems Student",
     from: "June 2024",
@@ -17,6 +18,7 @@ export const careerEducation = [
   },
   {
     title: "Bullion Ecosystem International ",
+    link: "https://bullionecosystem.com/",
     image: "/bullion.png",
     role: "Server Monitoring Staff",
     from: "April 2023",
@@ -24,6 +26,7 @@ export const careerEducation = [
   },
   {
     title: "Bullion Ecosystem International ",
+    link: "https://bullionecosystem.com/",
     image: "/bullion.png",
     role: "Internship",
     from: "October 2023",
@@ -31,6 +34,7 @@ export const careerEducation = [
   },
   {
     title: "Senior High School 4 Kendal ",
+    link: "https://smkn4kendal.sch.id/",
     image: "/logo-smk-4.png",
     role: "Student",
     from: "July 2021",

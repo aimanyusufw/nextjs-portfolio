@@ -113,6 +113,16 @@ const Home = () => {
               <h1 className="text-xl">Career & Education</h1>
               {careerEducation.map((data, index) => (
                 <div className="flex items-center gap-4" key={index}>
+                  <Link href={data.link} target="_blank">
+                    <div className="flex justify-center items-center p-2 rounded-full bg-white w-16 h-16">
+                      <Image
+                        src={data.image}
+                        width={70}
+                        height={70}
+                        alt={data.title}
+                      />
+                    </div>
+                  </Link>
                   <div className="">
                     <h1 className="text-lg">{data.title}</h1>
                     <span className="text-sm text-opacity-60">
