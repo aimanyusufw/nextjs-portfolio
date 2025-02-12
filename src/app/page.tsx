@@ -91,8 +91,8 @@ const Home = () => {
               aboutMe.txt
             </h1>
           </div>
-          <div className="md:px-4 flex flex-wrap items-center">
-            <div className="space-y-8 w-full md:w-1/2">
+          <div className="md:px-4 grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
+            <div className="space-y-8">
               <h1 className="font-medium text-5xl leading-relaxed max-w-md">
                 Hello, I&apos;m Aiman Yusuf Wicaksono!
               </h1>
@@ -109,52 +109,29 @@ const Home = () => {
                 ))}
               </div>
             </div>
-            <div className="w-full md:w-1/2">
-              <Image
-                className="mx-auto"
-                alt="skills image"
-                src={"/skills.svg"}
-                height={320}
-                width={320}
-              />
+            <div className="space-y-8">
+              <h1 className="text-xl">Career & Education</h1>
+              {careerEducation.map((data, index) => (
+                <div className="flex items-center gap-4" key={index}>
+                  <div className="">
+                    <h1 className="text-lg">{data.title}</h1>
+                    <span className="text-sm text-opacity-60">
+                      {data.role}, {data.from} -{" "}
+                      {data.until == "Now" ? (
+                        <span className="bg-green-100 text-green-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-green-900 dark:text-green-300">
+                          {data.until}
+                        </span>
+                      ) : (
+                        data.until
+                      )}
+                    </span>
+                  </div>
+                </div>
+              ))}{" "}
             </div>
           </div>
         </div>
       </section>
-      <div className="py-12">
-        <div className="container">
-          <div className="md:px-4 mb-8">
-            <h1 className="text-xl">Career & Education</h1>
-          </div>
-          <div className="md:px-4 space-y-8">
-            {careerEducation.map((data, index) => (
-              <div className="flex items-center gap-4" key={index}>
-                <div className="flex justify-center items-center p-2 rounded-full bg-white w-16 h-16">
-                  <Image
-                    src={data.image}
-                    width={70}
-                    height={70}
-                    alt={data.title}
-                  />
-                </div>
-                <div className="">
-                  <h1 className="text-lg">{data.title}</h1>
-                  <span className="text-sm text-opacity-60">
-                    {data.role}, {data.from} -{" "}
-                    {data.until == "Now" ? (
-                      <span className="bg-green-100 text-green-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-green-900 dark:text-green-300">
-                        {data.until}
-                      </span>
-                    ) : (
-                      data.until
-                    )}
-                  </span>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
     </>
   );
 };
