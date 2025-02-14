@@ -67,3 +67,32 @@ export const socialMedia: SocialMedia[] = [
   },
   { name: "X", icon: FaXTwitter, url: "https://x.com/aimanyus_" },
 ];
+
+export const portfolios = [
+  {
+    image: "https://cdn.magicui.design/bento-grid.mp4",
+    title: "Horizon Home - Listing Website",
+    excrept:
+      "Website frontend template for creating a property listing website using Next.js and additional libraries such as react-icons, next-intl, and others. ",
+    tag: ["realestate", "nextjs 14", "nextIntl", "tailwind css"],
+    preview: "https://frontend-realestate-app.vercel.app",
+    source: "https://github.com/aimanyusufw/realestate-web-frontend",
+    created_at: {
+      from: "Sep 18, 2024",
+      to: "Sep 30, 2024",
+    },
+  },
+  {
+    image: "https://cdn.llm.report/openai-demo.mp4",
+    title: "Factoid - Blog Wenbsite",
+    excrept:
+      "A template for creating website articles using the Laravel framework, along with additional packages to simplify content management with Filament.",
+    tag: ["blog", "laravel", "filament", "tailwind css"],
+    preview: "https://factoid.aimanyusuf.me/",
+    source: "https://github.com/aimanyusufw/laravel-article-website",
+    created_at: {
+      from: "Jun 19, 2024",
+      to: "Jul 13, 2024",
+    },
+  },
+];
