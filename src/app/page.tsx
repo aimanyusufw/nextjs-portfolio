@@ -25,7 +25,7 @@ const Home = () => {
             <div className="flex md:justify-center items-center gap-4">
               <div className="rounded-full h-8 w-8 md:w-12 md:h-12">
                 {isLoading ? (
-                  <Skeleton className="w-12 h-12 rounded-full" />
+                  <Skeleton className="h-8 w-8 md:w-12 md:h-12 rounded-full" />
                 ) : (
                   <Image
                     src="/profile.svg"
@@ -40,12 +40,12 @@ const Home = () => {
                 Hello 👋
               </h4>
             </div>
-            <h1 className="font-semibold text-5xl md:text-6xl max-w-4xl md:text-center leading-snug md:leading-relaxed">
+            <h1 className="font-semibold text-4xl md:text-6xl max-w-sm md:max-w-4xl md:text-center leading-snug md:leading-relaxed">
               My Name Is{" "}
               <span className="md:hidden text-red-500">Aiman Yusuf</span>
               <span
                 id="trigger"
-                className="text-red-500 cursor-pointer group relative hidden md:block"
+                className="text-red-500 cursor-pointer group relative hidden md:inline"
               >
                 [name]
                 <div
@@ -86,18 +86,18 @@ const Home = () => {
           <div className="md:px-4 mb-8 flex gap-4 items-center">
             <div
               className="w-0 h-0 
-                  border-t-[10px] border-t-transparent
-                  border-l-[15px] border-l-green-500
-                  border-b-[10px] border-b-transparent"
+                  border-t-[5px] md:border-t-[10px] border-t-transparent
+                  border-l-[10px] md:border-l-[15px] border-l-green-500
+                  border-b-[5px] md:border-b-[10px] border-b-transparent"
             ></div>
-            <h1 className="font-firaCode">
+            <h1 className="font-firaCode text-xs md:text-base">
               <span className="text-blue-400">@Aimanyusuf/portfolio</span> cat
               aboutMe.txt
             </h1>
           </div>
           <div className="md:px-4 grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
-            <div className="space-y-8">
-              <h1 className="font-medium text-5xl leading-relaxed max-w-md">
+            <div className="space-y-6 md:space-y-8 mb-10 md:mb-0">
+              <h1 className="font-medium text-4xl md:text-5xl leading-relaxed max-w-sm md:max-w-md">
                 Hello, I&apos;m Aiman Yusuf Wicaksono!
               </h1>
               <p className="text-xs md:text-sm leading-relaxed text-neutral-300 max-w-sm">
@@ -113,12 +113,12 @@ const Home = () => {
                 ))}
               </div>
             </div>
-            <div className="space-y-8">
-              <h1 className="text-xl">Career & Education</h1>
+            <div className="space-y-6 md:space-y-8">
+              <h1 className="text-lg md:text-xl">Career & Education</h1>
               {careerEducation.map((data, index) => (
                 <div className="flex items-center gap-4" key={index}>
                   <Link href={data.link} target="_blank">
-                    <div className="flex justify-center items-center p-2 rounded-full bg-white w-16 h-16">
+                    <div className="flex justify-center items-center p-2 rounded-full bg-white w-14 h-14 md:w-16 md:h-16">
                       <Image
                         src={data.image}
                         width={70}
@@ -128,8 +128,8 @@ const Home = () => {
                     </div>
                   </Link>
                   <div className="">
-                    <h1 className="text-lg">{data.title}</h1>
-                    <span className="text-sm text-opacity-60">
+                    <h1 className="text-base md:text-lg">{data.title}</h1>
+                    <span className="text-xs md:text-sm text-opacity-60">
                       {data.role}, {data.from} -{" "}
                       {data.until == "Now" ? (
                         <span className="bg-green-100 text-green-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-green-900 dark:text-green-300">
