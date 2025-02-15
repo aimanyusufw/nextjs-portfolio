@@ -151,11 +151,11 @@ const Home = () => {
           <div className="md:px-4 mb-8 md:mb-12 flex gap-4 items-center">
             <div
               className="w-0 h-0 
-                  border-t-[10px] border-t-transparent
-                  border-l-[15px] border-l-green-500
-                  border-b-[10px] border-b-transparent"
+                  border-t-[5px] md:border-t-[10px] border-t-transparent
+                  border-l-[10px] md:border-l-[15px] border-l-green-500
+                  border-b-[5px] md:border-b-[10px] border-b-transparent"
             ></div>
-            <h1 className="font-firaCode">
+            <h1 className="font-firaCode text-xs md:text-base">
               <span className="text-blue-400">@Aimanyusuf/portfolio</span> cat
               myWork.txt
             </h1>
@@ -171,7 +171,9 @@ const Home = () => {
                     loop
                   ></video>
                 </a>
-                <h1 className="text-lg font-medium my-4">{data.title}</h1>
+                <h1 className="text-base md:text-lg font-medium my-4">
+                  {data.title}
+                </h1>
                 <div className="flex mb-4">
                   {data.tag.map((data) => (
                     <span
@@ -182,7 +184,7 @@ const Home = () => {
                     </span>
                   ))}
                 </div>
-                <p className="text-sm leading-relaxed font-medium text-neutral-300">
+                <p className="text-xs md:text-sm leading-relaxed font-medium text-neutral-300">
                   {data.excrept}
                 </p>
               </div>
