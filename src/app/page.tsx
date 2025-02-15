@@ -20,10 +20,10 @@ const Home = () => {
   return (
     <>
       <section>
-        <div className="container py-80 flex justify-center items-center h-full">
-          <div className="md:px-4 space-y-8 relative">
-            <div className="flex justify-center items-center gap-4">
-              <div className="rounded-full w-12 h-12">
+        <div className="container py-44 md:py-80 flex justify-center items-center h-full">
+          <div className="md:px-4 space-y-6 md:space-y-8 relative">
+            <div className="flex md:justify-center items-center gap-4">
+              <div className="rounded-full h-8 w-8 md:w-12 md:h-12">
                 {isLoading ? (
                   <Skeleton className="w-12 h-12 rounded-full" />
                 ) : (
@@ -36,18 +36,21 @@ const Home = () => {
                   />
                 )}
               </div>
-              <h4 className="font-medium text-3xl text-center">Hello 👋</h4>
+              <h4 className="font-medium text-2xl md:text-3xl text-center">
+                Hello 👋
+              </h4>
             </div>
-            <h1 className="font-semibold text-6xl max-w-4xl text-center leading-relaxed">
+            <h1 className="font-semibold text-5xl md:text-6xl max-w-4xl md:text-center leading-snug md:leading-relaxed">
               My Name Is{" "}
+              <span className="md:hidden text-red-500">Aiman Yusuf</span>
               <span
                 id="trigger"
-                className="text-red-500 cursor-pointer group relative"
+                className="text-red-500 cursor-pointer group relative hidden md:block"
               >
                 [name]
                 <div
                   id="tag"
-                  className="absolute transition-all duration-300 opacity-0 text-base w-[600px] group-hover:opacity-100 flex flex-col items-center font-firaCode top-20 left-1/2 transform -translate-x-1/2"
+                  className="absolute transition-all duration-300 opacity-0 text-xs md:text-base w-[600px] group-hover:opacity-100 flex flex-col items-center font-firaCode top-10 md:top-20 left-1/2 transform -translate-x-1/2"
                 >
                   <div
                     className="w-0 h-0 
@@ -63,13 +66,13 @@ const Home = () => {
               </span>{" "}
               and I&apos;m A Software Engineer;
             </h1>
-            <p className="text-text text-sm mx-auto max-w-lg text-center leading-relaxed">
+            <p className="text-text text-xs md:text-sm md:mx-auto max-w-xs md:max-w-lg md:text-center leading-relaxed">
               Hello, my name is Aiman, and I&lsquo;m a Software Engineer from
               Indonesia. I enjoy exploring new experiences in my life.
             </p>
-            <div className="flex justify-center">
+            <div className="flex md:justify-center">
               <Link
-                className="px-4 py-3 bg-neutral-800 rounded-xl text-sm font-medium"
+                className="px-4 py-3 bg-neutral-800 rounded-xl text-xs md:text-sm font-medium"
                 href={"#"}
               >
                 Discover My Portfolio
@@ -157,12 +160,12 @@ const Home = () => {
               myWork.txt
             </h1>
           </div>
-          <div className="md:px-4 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10">
+          <div className="md:px-4 grid grid-cols-1 md:grid-cols-2 gap-10">
             {portfolios.map((data, index) => (
               <div key={index}>
                 <a className="mb-6" href={"portfolio/" + slug(data.title)}>
                   <video
-                    className="pointer-events-none mx-auto md:h-96 xl:h-64 w-full object-cover object-top rounded-md"
+                    className="pointer-events-none mx-auto md:h-96 w-full object-cover object-top rounded-md"
                     src={data.image}
                     autoPlay
                     loop
