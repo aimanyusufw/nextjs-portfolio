@@ -1,7 +1,24 @@
 import React from "react";
 import { FaMinus, FaPlus } from "react-icons/fa";
 
-const Accordion = ({ data, isOpen, setIsOpen, index }: any) => {
+type AccordionItem = {
+  question: string;
+  answer: string;
+};
+
+type AccordionProps = {
+  data: AccordionItem;
+  isOpen: boolean;
+  setIsOpen: (index: number) => void;
+  index: number;
+};
+
+const Accordion: React.FC<AccordionProps> = ({
+  data,
+  isOpen,
+  setIsOpen,
+  index,
+}) => {
   return (
     <div className="border border-neutral-500 rounded-xl">
       <button

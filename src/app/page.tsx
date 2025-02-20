@@ -17,7 +17,7 @@ const Home = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [accordionOpen, setAccordionOpen] = useState(0);
 
-  const handleButton = (i: any) => {
+  const handleButton = (i: number) => {
     if (accordionOpen === i) return;
     setAccordionOpen(i);
   };
