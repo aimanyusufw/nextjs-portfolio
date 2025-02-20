@@ -96,3 +96,26 @@ export const portfolios = [
     },
   },
 ];
+
+export const accordionItems = [
+  {
+    question: "Can you develop industrial-scale applications?",
+    answer:
+      "Of course, I can develop applications on an industrial scale. I will ensure that every application I create works well, regardless of the scale.",
+  },
+  {
+    question: "Can you develop Android/iOS applications?",
+    answer:
+      "Yes, I can. I am experienced in using Flutter to develop Android and iOS applications.",
+  },
+  {
+    question: "How many years of experience do you have?",
+    answer:
+      "Approximately 4 years. I have been involved in the technology field since I was in vocational high school.",
+  },
+  {
+    question: "How can I collaborate with you?",
+    answer:
+      "You can simply contact me via social media or email at aimanyusufdev@gmail.com. After that, we can discuss your project in more detail.",
+  },
+];
