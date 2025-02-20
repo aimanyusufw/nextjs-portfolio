@@ -1,7 +1,13 @@
 "use client";
 
+import Accordion from "@/components/ui/Acordion";
 import { Skeleton } from "@/components/ui/Skeleton";
-import { careerEducation, portfolios, socialMedia } from "@/data/home";
+import {
+  accordionItems,
+  careerEducation,
+  portfolios,
+  socialMedia,
+} from "@/data/home";
 import { slug } from "@/lib/stringConverter";
 import Image from "next/image";
 import Link from "next/link";
@@ -9,6 +15,12 @@ import React, { useEffect, useState } from "react";
 
 const Home = () => {
   const [isLoading, setIsLoading] = useState(true);
+  const [accordionOpen, setAccordionOpen] = useState(0);
+
+  const handleButton = (i: any) => {
+    if (accordionOpen === i) return;
+    setAccordionOpen(i);
+  };
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -81,7 +93,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section className="py-14">
+      <section className="py-20">
         <div className="container">
           <div className="md:px-4 mb-8 flex gap-4 items-center">
             <div
@@ -146,7 +158,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <div className="py-14">
+      <section className="py-20">
         <div className="container">
           <div className="md:px-4 mb-8 md:mb-12 flex gap-4 items-center">
             <div
@@ -191,7 +203,37 @@ const Home = () => {
             ))}
           </div>
         </div>
-      </div>
+      </section>
+      <section className="py-20">
+        <div className="container py-12">
+          <div className="md:px-4 grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
+            <div className="space-y-6 md:space-y-8 mb-10 md:mb-0">
+              <h1 className="font-medium capitalize text-4xl md:text-5xl md:leading-relaxed max-w-sm md:max-w-md">
+                frequently asked questions{" "}
+              </h1>
+              <h3 className="font-medium font-firaCode">My Social Media ⮧</h3>
+              <div className="flex gap-4">
+                {socialMedia.map((data) => (
+                  <Link href={data.url} key={data.name} target="_blank">
+                    <data.icon size={20} />
+                  </Link>
+                ))}
+              </div>
+            </div>
+            <div className="space-y-4">
+              {accordionItems.map((data, index) => (
+                <Accordion
+                  data={data}
+                  isOpen={accordionOpen === index}
+                  setIsOpen={handleButton}
+                  index={index}
+                  key={index}
+                />
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
     </>
   );
 };
