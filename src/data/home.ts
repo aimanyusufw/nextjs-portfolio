@@ -106,7 +106,7 @@ export const accordionItems = [
   {
     question: "Can you develop Android/iOS applications?",
     answer:
-      "Yes, I can. I am experienced in using Flutter to develop Android and iOS applications.",
+      "Yes, I can. I am experienced in using Flutter or React Native to develop Android and iOS applications.",
   },
   {
     question: "How many years of experience do you have?",
