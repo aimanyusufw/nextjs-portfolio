@@ -14,7 +14,7 @@ const FAQ = () => {
   };
 
   return (
-    <section className="py-20">
+    <section className="py-24">
       <div className="container py-12">
         <div className="md:px-4 grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
           <div className="space-y-6 md:space-y-8 mb-10 md:mb-0">

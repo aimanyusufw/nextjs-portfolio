@@ -4,19 +4,20 @@ import React from "react";
 
 const Portfolio = () => {
   return (
-    <section className="py-20">
+    <section className="py-24">
       <div className="container">
-        <div className="md:px-4 mb-8 md:mb-12 flex gap-4 items-center">
-          <div
-            className="w-0 h-0 
-                  border-t-[5px] md:border-t-[10px] border-t-transparent
-                  border-l-[10px] md:border-l-[15px] border-l-green-500
-                  border-b-[5px] md:border-b-[10px] border-b-transparent"
-          ></div>
-          <h1 className="font-firaCode text-xs md:text-base">
-            <span className="text-blue-400">@Aimanyusuf/portfolio</span> cat
-            myWork.txt
+        <div className="md:px-4 mb-8 md:mb-12 space-y-4">
+          <span className="bg-red-100 text-red-800 text-xs md:text-sm lg:text-base font-medium me-2 px-2.5 py-0.5 rounded-sm dark:bg-red-900 dark:text-red-300">
+            Portfolio
+          </span>
+          <h1 className="font-medium text-lg md:text-2xl lg:text-4xl">
+            Unveiling My Creations
           </h1>
+          <p className="max-w-sm font-medium leading-relaxed text-xs md:text-sm text-neutral-300">
+            Take a look at some of my best projects, crafted with creativity and
+            precision. From stunning designs to innovative solutions, it’s all
+            here!
+          </p>
         </div>
         <div className="md:px-4 grid grid-cols-1 md:grid-cols-2 gap-10">
           {portfolios.map((data, index) => (

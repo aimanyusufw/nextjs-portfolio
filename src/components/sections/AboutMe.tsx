@@ -5,22 +5,13 @@ import React from "react";
 
 const AboutMe = () => {
   return (
-    <section className="py-20">
+    <section className="py-24">
       <div className="container">
-        <div className="md:px-4 mb-8 flex gap-4 items-center">
-          <div
-            className="w-0 h-0 
-                  border-t-[5px] md:border-t-[10px] border-t-transparent
-                  border-l-[10px] md:border-l-[15px] border-l-green-500
-                  border-b-[5px] md:border-b-[10px] border-b-transparent"
-          ></div>
-          <h1 className="font-firaCode text-xs md:text-base">
-            <span className="text-blue-400">@Aimanyusuf/portfolio</span> cat
-            aboutMe.txt
-          </h1>
-        </div>
         <div className="md:px-4 grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
           <div className="space-y-6 md:space-y-8 mb-10 md:mb-0">
+            <span className="bg-red-100 text-red-800 text-xs md:text-sm lg:text-base font-medium me-2 px-2.5 py-0.5 rounded-sm dark:bg-red-900 dark:text-red-300">
+              About Me
+            </span>
             <h1 className="font-medium text-4xl md:text-5xl leading-relaxed max-w-sm md:max-w-md">
               Hello, I&apos;m Aiman Yusuf Wicaksono!
             </h1>
