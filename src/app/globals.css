@@ -9,3 +9,22 @@ body {
 h1 {
   @apply selection:bg-white selection:text-black;
 }
+
+/* Webkit (Chrome, Safari) */
+::-webkit-scrollbar {
+  width: 5px; /* Lebar scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: transparent; /* Warna background track */
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #e63946; /* Warna scroll thumb */
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #d62828; /* Warna saat hover */
+}
