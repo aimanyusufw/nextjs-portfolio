@@ -65,7 +65,7 @@ export const socialMedia: SocialMedia[] = [
     icon: FaFacebook,
     url: "https://www.facebook.com/profile.php?id=61554416981074",
   },
-  { name: "X", icon: FaXTwitter, url: "https://x.com/aimanyus_" },
+  { name: "X", icon: FaXTwitter, url: "https://x.com/aimanyw_" },
 ];
 
 export const portfolios = [
