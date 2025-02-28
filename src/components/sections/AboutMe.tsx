@@ -23,7 +23,7 @@ const AboutMe = () => {
             <div className="flex gap-4">
               {socialMedia.map((data) => (
                 <Link href={data.url} key={data.name} target="_blank">
-                  <data.icon size={20} />
+                  <data.icon size={20} className="w-4 md:w-5" />
                 </Link>
               ))}
             </div>

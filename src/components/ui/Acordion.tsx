@@ -25,7 +25,7 @@ const Accordion: React.FC<AccordionProps> = ({
         onClick={() => setIsOpen(index)}
         className="w-full flex justify-between items-center p-5"
       >
-        <h1 className="font-medium text-sm md:text-base lg:text-lg">
+        <h1 className="font-medium text-sm md:text-base lg:text-lg text-start">
           {data.question}
         </h1>
         <span className="p-2 border border-neutral-500 rounded-full text-slate-300">
@@ -40,7 +40,7 @@ const Accordion: React.FC<AccordionProps> = ({
         }`}
       >
         <div className="overflow-hidden">
-          <p className="text-neutral-300 text-xs md:text-sm md:leading-relaxed">
+          <p className="text-neutral-300 text-xs max-w-md md:text-sm leading-relaxed md:leading-relaxed">
             {data.answer}
           </p>
         </div>

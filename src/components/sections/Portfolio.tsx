@@ -13,7 +13,7 @@ const Portfolio = () => {
           <span className="bg-red-100 text-red-800 text-xs md:text-sm lg:text-base font-medium me-2 px-2.5 py-0.5 rounded-sm dark:bg-red-900 dark:text-red-300">
             Portfolio
           </span>
-          <h1 className="font-medium text-lg md:text-2xl lg:text-4xl">
+          <h1 className="font-medium text-4xl md:text-5xl leading-relaxed md:leading-relaxed max-w-sm md:max-w-md">
             Unveiling My Creations
           </h1>
           <p className="max-w-sm font-medium leading-relaxed text-xs md:text-sm text-neutral-300">
@@ -22,7 +22,7 @@ const Portfolio = () => {
             here!
           </p>
         </div>
-        <div className="md:px-4 grid grid-cols-1 md:grid-cols-2 gap-10">
+        <div className="md:px-4 grid grid-cols-1 md:grid-cols-2 gap-14 md:gap-10">
           {portfolios.map((data, index) => (
             <div key={index}>
               <a className="mb-6" href={"portfolio/" + slug(data.title)}>
@@ -54,7 +54,7 @@ const Portfolio = () => {
                 <a
                   href={data.preview}
                   target="_blank"
-                  className="hover:underline"
+                  className="hover:underline text-sm md:text-base"
                 >
                   Demo Website
                   <FiExternalLink className="inline-block ms-3" />
@@ -62,7 +62,7 @@ const Portfolio = () => {
                 <a
                   href={data.source}
                   target="_blank"
-                  className="hover:underline"
+                  className="hover:underline text-sm md:text-base"
                 >
                   <FaGithub className="inline-block me-3" />
                   Repository
