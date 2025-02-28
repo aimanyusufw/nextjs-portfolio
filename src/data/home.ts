@@ -70,7 +70,7 @@ export const socialMedia: SocialMedia[] = [
 
 export const portfolios = [
   {
-    image: "https://cdn.magicui.design/bento-grid.mp4",
+    image: "/img/horizon.png",
     title: "Horizon Home - Listing Website",
     excrept:
       "Website frontend template for creating a property listing website using Next.js and additional libraries such as react-icons, next-intl, and others. ",
@@ -83,8 +83,8 @@ export const portfolios = [
     },
   },
   {
-    image: "https://cdn.llm.report/openai-demo.mp4",
-    title: "Factoid - Blog Wenbsite",
+    image: "/img/factoid.png",
+    title: "Factoid - Blog Website",
     excrept:
       "A template for creating website articles using the Laravel framework, along with additional packages to simplify content management with Filament.",
     tag: ["blog", "laravel", "filament", "tailwind css"],
