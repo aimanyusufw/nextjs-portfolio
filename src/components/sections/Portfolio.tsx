@@ -1,6 +1,9 @@
 import { portfolios } from "@/data/home";
 import { slug } from "@/lib/stringConverter";
+import Image from "next/image";
 import React from "react";
+import { FaGithub } from "react-icons/fa6";
+import { FiExternalLink } from "react-icons/fi";
 
 const Portfolio = () => {
   return (
@@ -23,12 +26,13 @@ const Portfolio = () => {
           {portfolios.map((data, index) => (
             <div key={index}>
               <a className="mb-6" href={"portfolio/" + slug(data.title)}>
-                <video
+                <Image
                   className="pointer-events-none mx-auto md:h-96 w-full object-cover object-top rounded-md"
+                  width={1600}
+                  height={900}
+                  alt={slug(data.title)}
                   src={data.image}
-                  autoPlay
-                  loop
-                ></video>
+                />
               </a>
               <h1 className="text-base md:text-lg font-medium my-4">
                 {data.title}
@@ -43,9 +47,27 @@ const Portfolio = () => {
                   </span>
                 ))}
               </div>
-              <p className="text-xs md:text-sm leading-relaxed font-medium text-neutral-300">
+              <p className="text-xs md:text-sm leading-relaxed font-medium text-neutral-300 max-w-md">
                 {data.excrept}
               </p>
+              <div className="flex justify-between gap-6 mt-5">
+                <a
+                  href={data.preview}
+                  target="_blank"
+                  className="hover:underline"
+                >
+                  Demo Website
+                  <FiExternalLink className="inline-block ms-3" />
+                </a>
+                <a
+                  href={data.source}
+                  target="_blank"
+                  className="hover:underline"
+                >
+                  <FaGithub className="inline-block me-3" />
+                  Repository
+                </a>
+              </div>
             </div>
           ))}
         </div>
