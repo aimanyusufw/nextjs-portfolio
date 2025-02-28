@@ -12,7 +12,7 @@ const AboutMe = () => {
             <span className="bg-red-100 text-red-800 text-xs md:text-sm lg:text-base font-medium me-2 px-2.5 py-0.5 rounded-sm dark:bg-red-900 dark:text-red-300">
               About Me
             </span>
-            <h1 className="font-medium text-4xl md:text-5xl leading-relaxed max-w-sm md:max-w-md">
+            <h1 className="font-medium text-4xl md:text-5xl leading-relaxed md:leading-relaxed max-w-sm md:max-w-md">
               Hello, I&apos;m Aiman Yusuf Wicaksono!
             </h1>
             <p className="text-xs md:text-sm leading-relaxed text-neutral-300 max-w-sm">
