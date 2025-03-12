@@ -75,7 +75,7 @@ export const portfolios = [
     excrept:
       "Website frontend template for creating a property listing website using Next.js and additional libraries such as react-icons, next-intl, and others. ",
     tag: ["realestate", "nextjs 14", "nextIntl", "tailwind css"],
-    preview: "https://frontend-realestate-app.vercel.app",
+    preview: "https://realestate-red-three.vercel.app/en",
     source: "https://github.com/aimanyusufw/realestate-web-frontend",
     created_at: {
       from: "Sep 18, 2024",
