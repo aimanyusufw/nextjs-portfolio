@@ -2,6 +2,10 @@ Hello my friends, This is a [Next.js](https://nextjs.org) project bootstrapped w
 
 ## Preview Website
 
+URL : https://aimanyusuf.me
+
+Screenshot :
+
 <p align="center">
   <a href="http://nestjs.com/" target="blank"><img src="https://aimanyusuf.me/img/web-preview.png" alt="Web Preview" /></a>
 </p>
