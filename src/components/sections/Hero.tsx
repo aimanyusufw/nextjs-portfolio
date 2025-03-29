@@ -41,7 +41,7 @@ const Hero = () => {
             <span className="md:hidden text-red-500">Aiman Yusuf</span>
             <span
               id="trigger"
-              className="text-red-500 cursor-pointer group relative hidden md:inline"
+              className="text-red-500 cursor-pointer group relative hidden md:inline font-firaCode"
             >
               [name]
               <div
