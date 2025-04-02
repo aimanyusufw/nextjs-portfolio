@@ -15,8 +15,8 @@ const Hero = () => {
   }, []);
 
   return (
-    <section>
-      <div className="container py-44 md:py-80 flex justify-center items-center h-full">
+    <section className="pt-40 pb-24 sm:pt-64 sm:pb-32">
+      <div className="container flex justify-center items-center h-full">
         <div className="md:px-4 space-y-6 md:space-y-8 relative">
           <div className="flex md:justify-center items-center gap-4">
             <div className="rounded-full h-8 w-8 md:w-12 md:h-12">
