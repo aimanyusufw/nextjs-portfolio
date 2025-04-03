@@ -7,7 +7,7 @@ URL : https://aimanyusuf.me
 Screenshot :
 
 <p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://aimanyusuf.me/img/web-preview.png" alt="Web Preview" /></a>
+  <a href="http://aimanyusuf.me/" target="blank"><img src="https://aimanyusuf.me/img/web-preview.png" alt="Web Preview" /></a>
 </p>
 
 ## About This Repository
