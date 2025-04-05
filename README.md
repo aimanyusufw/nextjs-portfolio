@@ -12,4 +12,4 @@ Screenshot :
 
 ## About This Repository
 
-This repository contains the code for the portfolio website I use. The code in this repository is available for anyone to use for any purpose. However, I kindly ask that you use it responsibly and do not use it for any illegal activities.
+This repository contains the code for the portfolio website I use. The code in this repository is available for anyone to use for any purpose. 
