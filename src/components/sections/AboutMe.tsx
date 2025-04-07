@@ -66,8 +66,7 @@ const AboutMe = () => {
                   What Clients Say
                 </p>
                 <p className="mt-2 max-w-lg text-sm/6 text-gray-300 max-lg:text-center">
-                  Morbi viverra dui mi arcu sed. Tellus semper adipiscing
-                  suspendisse semper morbi.
+                  Many clients are happy with the results of my work.
                 </p>
               </div>
               <div className="flex flex-1 items-center [container-type:inline-size] max-lg:py-6 lg:pb-2">
