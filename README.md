@@ -1,4 +1,4 @@
-# Hello my name is aiman
+# Hello my name is Aiman
 
 ## Preview Website
 
