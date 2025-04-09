@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 const Footer = () => {
@@ -13,24 +14,24 @@ const Footer = () => {
               </h2>
               <ul className="text-gray-300 font-medium">
                 <li className="mb-4">
-                  <a href="#" className=" hover:underline">
+                  <Link href="#" className=" hover:underline">
                     Instagram
-                  </a>
+                  </Link>
                 </li>
                 <li className="mb-4">
-                  <a href="#" className="hover:underline">
+                  <Link href="#" className="hover:underline">
                     Facebook
-                  </a>
+                  </Link>
                 </li>
                 <li className="mb-4">
-                  <a href="#" className="hover:underline">
+                  <Link href="#" className="hover:underline">
                     Tiktok
-                  </a>
+                  </Link>
                 </li>
                 <li className="mb-4">
-                  <a href="#" className="hover:underline">
+                  <Link href="#" className="hover:underline">
                     Linkedin
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -40,24 +41,24 @@ const Footer = () => {
               </h2>
               <ul className="text-gray-300 font-medium">
                 <li className="mb-4">
-                  <a href="#" className=" hover:underline">
+                  <Link href="#" className=" hover:underline">
                     NextJS
-                  </a>
+                  </Link>
                 </li>
                 <li className="mb-4">
-                  <a href="#" className="hover:underline">
+                  <Link href="#" className="hover:underline">
                     React JS
-                  </a>
+                  </Link>
                 </li>
                 <li className="mb-4">
-                  <a href="#" className="hover:underline">
+                  <Link href="#" className="hover:underline">
                     Tailwind CSS
-                  </a>
+                  </Link>
                 </li>
                 <li className="mb-4">
-                  <a href="#" className="hover:underline">
+                  <Link href="#" className="hover:underline">
                     Laravel
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -65,7 +66,8 @@ const Footer = () => {
         </div>
         <div className="px-4 py-6 md:flex md:items-center md:justify-between">
           <span className="text-sm text-gray-300 sm:text-center">
-            © 2025 <a href="/">Aiman Yusuf Wicaksono</a>. All Rights Reserved.
+            © 2025 <Link href="/">Aiman Yusuf Wicaksono</Link>. All Rights
+            Reserved.
           </span>
         </div>
       </div>
