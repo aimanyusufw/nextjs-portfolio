@@ -119,3 +119,27 @@ export const accordionItems = [
       "You can simply contact me via social media or email at aimanyusufdev@gmail.com. After that, we can discuss your project in more detail.",
   },
 ];
+
+export const articles = [
+  {
+    image:
+      "https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80",
+    date: "Mar 16, 2020",
+    author: "Michael Foster",
+    title: "Boost your conversion rate",
+  },
+  {
+    image:
+      "https://images.unsplash.com/photo-1547586696-ea22b4d4235d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3270&q=80",
+    date: "Mar 16, 2020",
+    author: "Michael Foster",
+    title: "How to use search engine optimization to drive sales",
+  },
+  {
+    image:
+      "https://images.unsplash.com/photo-1492724441997-5dc865305da7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3270&q=80",
+    date: "Mar 16, 2020",
+    author: "Michael Foster",
+    title: "Improve your customer experience",
+  },
+];
