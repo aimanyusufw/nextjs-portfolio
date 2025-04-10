@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 type ArticleData = {
@@ -14,7 +15,9 @@ type ArticleCardProps = {
 const ArticleCard: React.FC<ArticleCardProps> = ({ data }) => {
   return (
     <article className="h-[450px] rounded-xl overflow-hidden shadow-lg bg-white relative">
-      <img
+      <Image
+        width={200}
+        height={400}
         className="w-full h-full object-cover"
         src={data.image}
         alt={`Cover for ${data.title}`}
