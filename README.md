@@ -1,6 +1,6 @@
 # Hello my name is Aiman Yusuf Wicaksono
 
-## Preview Website
+## Screenshot 
 
 URL : https://aimanyusuf.me
 
