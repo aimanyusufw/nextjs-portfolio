@@ -1,5 +1,6 @@
 import ArticleCard from "@/components/cards/ArticleCard";
 import AboutMe from "@/components/sections/AboutMe";
+import FAQ from "@/components/sections/FAQ";
 import Hero from "@/components/sections/Hero";
 import Portfolio from "@/components/sections/Portfolio";
 import { articles } from "@/data/home";
@@ -75,6 +76,7 @@ const Home = () => {
           </div>
         </div>
       </div>
+      <FAQ />
     </>
   );
 };
