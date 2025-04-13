@@ -1,7 +1,6 @@
 "use client";
 
-import { accordionItems, socialMedia } from "@/data/home";
-import Link from "next/link";
+import { accordionItems } from "@/data/home";
 import React, { useState } from "react";
 import Accordion from "../ui/Acordion";
 
