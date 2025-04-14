@@ -14,7 +14,7 @@ type ArticleCardProps = {
 
 const ArticleCard: React.FC<ArticleCardProps> = ({ data }) => {
   return (
-    <article className="h-[450px] rounded-xl overflow-hidden shadow-lg bg-white relative">
+    <article className="h-72 md:h-96 lg:h-[450px] rounded-xl overflow-hidden shadow-lg bg-white relative">
       <Image
         width={200}
         height={400}
