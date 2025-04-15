@@ -19,9 +19,9 @@ const FAQ = () => {
           Frequently Asked Questions
         </h2>
         <p className="mb-10 max-w-lg mx-auto text-center text-balance capitalize text-4xl font-semibold tracking-tight sm:text-5xl">
-          Some frequently asked questions and their answers.
+          Quick answers to common questions.
         </p>
-        <div className="space-y-4  w-full md:w-1/2 mx-auto">
+        <div className="space-y-3 w-full md:w-1/2 mx-auto">
           {accordionItems.map((data, index) => (
             <Accordion
               data={data}
