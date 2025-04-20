@@ -6,10 +6,6 @@ body {
   @apply bg-background text-text;
 }
 
-h1 {
-  @apply selection:bg-white selection:text-black;
-}
-
 /* Webkit (Chrome, Safari) */
 ::-webkit-scrollbar {
   width: 5px; /* Lebar scrollbar */
